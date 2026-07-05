@@ -18,5 +18,9 @@ def fill(i, j, grid, value_to_change, new_value):
 
 def bucket_fill(grid, pos, new_value):
     value_to_change = grid[pos[0]][pos[1]]
+    if value_to_change == new_value:
+        return grid
+    
     fill(pos[0], pos[1], grid, value_to_change, new_value)
+    
     return grid
