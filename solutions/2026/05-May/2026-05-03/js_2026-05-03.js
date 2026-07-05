@@ -17,3 +17,18 @@ function getGreeting(s) {
         return 'Good night';
     }
 }
+
+
+/*
+// Good Day - SHORTER VERSION
+function getGreeting(s) {
+    const [h, m] = s.split(':').map(Number);
+    const hour = h * 60 + m;
+
+    if (hour < 5 * 60) return 'Good night';
+    if (hour < 12 * 60) return 'Good morning';
+    if (hour < 18 * 60) return 'Good afternoon';
+    if (hour < 22 * 60) return 'Good evening';
+    return 'Good night';
+}
+*/
