@@ -17,3 +17,9 @@ function isValidSchema(obj) {
 
     return username && posts && verified;
 }
+
+/* Schema Validator Part 2 - SHORTER VERSION
+function isValidSchema(obj) {
+    return (typeof obj.username === 'string' && typeof obj.posts === 'number' && typeof obj.verified === 'boolean');
+}
+*/
