@@ -8,3 +8,10 @@ function isValidSchema(obj) {
     }
     return false;
 }
+
+
+/* Schema Validator Part 1 - SHORTER VERSION
+function isValidSchema(obj) {
+    return typeof obj.username === 'string';
+}
+*/
