@@ -1,1 +1,20 @@
 // JavaScript solution for 2025-12-11
+// Roman Numeral Bilder
+function toRoman(num) {
+    const roman = [
+        [1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'],
+        [100, 'C'], [90, 'XC'], [50, 'L'], [40, 'XL'],
+        [10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']
+    ];
+
+    let res = '';
+
+    for (const [value, symbol] of roman) {
+    while (num >= value) {
+        res += symbol;
+        num -= value;
+        }
+    }
+
+    return res;
+}
