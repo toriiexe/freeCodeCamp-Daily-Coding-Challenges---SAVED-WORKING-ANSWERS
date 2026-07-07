@@ -1,0 +1,4 @@
+# Frontmatter Parser
+
+## Summary
+Parse a frontmatter block from a string and convert its key-value pairs into an object or dictionary. Values should be interpreted using their appropriate data types, including strings, numbers, and booleans.
