@@ -1,1 +1,5 @@
 # Python solution for 2025-12-08
+# Pounds to Kilograms
+def convert_to_kgs(lbs):
+    kgs = lbs * 0.453592
+    return f"{lbs} {'pound' if lbs == 1 else 'pounds'} equals {kgs:.2f} {'kilogram' if round(kgs, 2) == 1 else 'kilograms'}."
