@@ -8,7 +8,7 @@ def to_binary(decimal):
         res += str(decimal % 2)
         decimal //= 2
     return res[::-1]
-
+ 
 """
 # Decimal to Binary - SHORTER VERSION
 def to_binary(decimal):
