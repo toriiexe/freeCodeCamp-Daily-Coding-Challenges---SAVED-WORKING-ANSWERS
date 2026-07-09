@@ -9,3 +9,10 @@ function toDecimal(binary) {
 
 	return s;
 }
+
+/*
+// Binary to Decimal - SHORTER VERSION
+function toDecimal(binary) {
+    return parseInt(binary, 2);
+}
+*/
