@@ -5,7 +5,7 @@ function buildMatrix(rows, cols) {
     for (let row = 0; row < rows; row++){
         let temp = [];
         for (let col = 0; col < cols; col++){
-        temp.push(0);
+            temp.push(0);
         }
         matrix.push(temp);
     }
