@@ -1,6 +1,8 @@
 # Python solution for 2025-10-02
 # Decimal to Binary
 def to_binary(decimal):
+    if decimal == 0:
+        return '0'
     res = ''
     while decimal >= 1:
         res += str(decimal % 2)
