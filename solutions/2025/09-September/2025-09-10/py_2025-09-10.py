@@ -1,14 +1,18 @@
 # Python solution for 2025-09-10
 # Array Diff
 def array_diff(arr1, arr2):
-    res = []
-    for el1 in arr1:
-        if el1 not in arr2:
-            res.append(el1)
+    s1 = set(arr1)
+    s2 = set(arr2)
 
-    for el2 in arr2:
-        if el2 not in arr1:
-            res.append(el2)
+    res = []
+
+    for x in s1:
+        if x not in s2:
+            res.append(x)
+
+    for y in s2:
+        if y not in s1:
+            res.append(y)
 
     return sorted(res)
 """
