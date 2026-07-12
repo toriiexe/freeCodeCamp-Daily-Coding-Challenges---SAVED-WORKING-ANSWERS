@@ -1,7 +1,7 @@
 // JavaScript solution for 2026-02-07
 // 2026 Winter Games Day 2: Snowboarding
 function getLandingStance(startStance, rotation) {
-  const reversedStartStance = {
+    const reversedStartStance = {
         'Regular': 'Goofy',
         'Goofy': 'Regular'
     }
