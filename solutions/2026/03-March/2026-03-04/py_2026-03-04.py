@@ -15,6 +15,6 @@ def card_values(cards):
         if value.isdigit():
             res.append(int(value))
         else:
-            res.append(letters_to_values[value])
+            res.append(letters_to_values.get(value, 0))
 
     return res
