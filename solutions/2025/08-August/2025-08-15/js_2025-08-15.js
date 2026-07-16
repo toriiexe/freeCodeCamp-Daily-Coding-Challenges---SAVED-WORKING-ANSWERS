@@ -6,11 +6,11 @@ function jbelmu(text) {
 
     for (const word of words){
         if (word.length <= 2){
-        res.push(word);
+            res.push(word);
         }
         else{
-        const mid = word.slice(1,-1).split('').sort().join('');
-        res.push(word[0] + mid + word[word.length - 1]);
+            const mid = word.slice(1,-1).split('').sort().join('');
+            res.push(word[0] + mid + word[word.length - 1]);
         }
     }
     return res.join(' ');
